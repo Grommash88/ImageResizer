@@ -100,7 +100,7 @@ public class ImageResizerUtil {
   }
 
   //Метод равномерно распределяет файлы, из входного массива.
-  private static <T> List<List<T>> partition(List<T> ascSortedItems, int CPUCoreCount) {
+  private static List<List<File>> partition(List<File> ascSortedItems, int CPUCoreCount) {
 
     if (CPUCoreCount < 2) {
       if (CPUCoreCount < 1) {
